@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head id="head">
+<head>
 <meta charset="UTF-8">
 <title>Sizr</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -10,21 +9,19 @@ body {color:#000;background-color:#fff;} ul, li {margin:0;padding:0;}
 #wrap {position:absolute;top:50%;left:50%;width:300px;height:300px;margin-left:-150px;margin-top:-150px;border:1px solid rgba(0,0,0,0.8);background-color:rgba(0,0,0,0.2);}
 li {display:block;width:300px;height:150px;line-height:150px;text-align:center;}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-	#ratio:after {content:'1';}
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 1)   {#ratio:after {content:'1';}}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {#ratio:after {content:'1.5';}}
+@media only screen and (-webkit-min-device-pixel-ratio: 2)   {#ratio:after {content:'2';}}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-	#ratio:after {content:'1.5';}
-}
+@media screen and (max-width:479px) {#rez:after {content:'479px';}}
+@media screen and (max-width:799px) {#rez:after {content:'799px';}}
+@media screen and (max-width:853px) {#rez:after {content:'853px';}}
+@media screen and (max-width:959px) {#rez:after {content:'959px';}}
+@media screen and (max-width:1023px) {#rez:after {content:'1023px';}}
+@media screen and (max-width:1279px) {#rez:after {content:'1279px';}}
+@media screen and (max-width:2047px) {#rez:after {content:'2047px';}}
+@media screen and (min-width:2049px) {#rez:after {content:'> 2048px';}}
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	#ratio:after {content:'2';}
-}
-
-@media screen and (max-width:479px) {
-	#rez:after {content:'479px';}
-}
 </style>
 </head>
 <body>
