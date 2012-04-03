@@ -14,28 +14,18 @@ li {display:block;width:300px;height:100px;line-height:100px;text-align:center;}
 @media only screen and (-webkit-min-device-pixel-ratio: 2)   {#ratio:after {content:'2';}}
 
 @media screen and (min-width:2049px) {#max-width:after {content:'> 2048px';}}
-@media screen and (max-width:2047px) {#max-width:after {content:'2047px';}}
-@media screen and (max-width:1279px) {#max-width:after {content:'1279px';}}
-@media screen and (max-width:1023px) {#max-width:after {content:'1023px';}}
-@media screen and (max-width:959px) {#max-width:after {content:'959px';}}
-@media screen and (max-width:853px) {#max-width:after {content:'853px';}}
-@media screen and (max-width:799px) {#max-width:after {content:'799px';}}
-@media screen and (max-width:479px) {#max-width:after {content:'479px';}}
-
-@media screen and (max-device-width:2048px) {#max-device-width:after {content:'2048px';}}
-@media screen and (max-device-width:1280px) {#max-device-width:after {content:'1280px';}}
-@media screen and (max-device-width:1024px) {#max-device-width:after {content:'1024px';}}
-@media screen and (max-device-width:960px) {#max-device-width:after {content:'960px';}}
-@media screen and (max-device-width:854px) {#max-device-width:after {content:'854px';}}
-@media screen and (max-device-width:800px) {#max-device-width:after {content:'800px';}}
-@media screen and (max-device-width:480px) {#max-device-width:after {content:'480px';}}
+@media screen and (max-width:2047px) {#max-width:after {content:'< 2048px';}}
+@media screen and (max-width:1279px) {#max-width:after {content:'< 1280px';}}
+@media screen and (max-width:1023px) {#max-width:after {content:'< 1024px';}}
+@media screen and (max-width:959px) {#max-width:after {content:'< 960px';}}
+@media screen and (max-width:853px) {#max-width:after {content:'< 854px';}}
+@media screen and (max-width:799px) {#max-width:after {content:'< 800px';}}
+@media screen and (max-width:479px) {#max-width:after {content:'< 480px';}}
 
 </style>
 </head>
-<body>
-<div id="wrap"><ul>
+<body><div id="wrap"><ul>
 	<li id="ratio">device-pixel-ratio: </li>
 	<li id="max-width">max-width: </li>
-	<li id="max-device-width">max-device-width: </li></ul></div>
-</body>
+</ul></div></body>
 </html>
